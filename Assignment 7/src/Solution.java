@@ -4,9 +4,9 @@ import java.util.Scanner;
 public class Solution {
 
     public static void main(String[] args) throws IOException {
-
+       //1
+       //ניתן להשתמש בdesign patterns בכל השפות
        //2
-
         LogWriter logWriter = LogWriter.getInstance();
         logWriter.writer("Logs");
         Scanner scanner = new Scanner(System.in);
