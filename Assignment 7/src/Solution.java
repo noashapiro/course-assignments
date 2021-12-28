@@ -24,9 +24,6 @@ public class Solution {
         //maven מכיל סט כלים לניהול פרויקטים בjava
         //מכיל מיליוני ספריות קוד שניתן בOS
 
-
-
-
         //9
         //And ang Gradle
     }
