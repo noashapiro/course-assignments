@@ -19,6 +19,10 @@ public class Solution {
         System.out.println("Please enter your phone number");
         LogWriter.getInstance().writer(scanner.next());
         System.out.println("Thanks");
+
+        //6
+        //maven מכיל סט כלים לניהול פרויקטים בjava
+        //מכיל מיליוני ספריות קוד שניתן בOS
     }
 }
 
