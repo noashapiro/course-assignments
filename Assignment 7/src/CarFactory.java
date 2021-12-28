@@ -1,8 +1,6 @@
 import jdk.jshell.spi.ExecutionControl.NotImplementedException;
 
 public class CarFactory {
-    public CarFactory() {
-    }
 
     public Drivable getCar(String carName) throws NotImplementedException {
         if (carName.equalsIgnoreCase("Fiat")) {
