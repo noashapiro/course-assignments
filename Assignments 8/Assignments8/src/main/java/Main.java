@@ -79,17 +79,23 @@ public class Main {
     public static void youtube_search_song(){
         chromeDriver.get("https://www.youtube.com/");
         chromeDriver.manage().window().maximize();
-        WebElement search = chromeDriver.findElement(By.id("search"));
-        search.click();
+        WebElement search = chromeDriver.findElement(By.cssSelector("input[name=search_query]"));
         search.sendKeys("fix you");
-
+        chromeDriver.findElement(By.id("search-icon-legacy")).click();
     }
 
-
+    //8
+    @Test
+    public static void facebook_test(){
+        chromeDriver.get("https://www.facebook.com/");
+        chromeDriver.findElement(By.id("email")).sendKeys("noashapiro@gmail.com");
+        chromeDriver.findElement(By.id("pass")).sendKeys("Noamay");
+        chromeDriver.findElement(By.cssSelector("button[name=login]")).click();
+    }
 
     @AfterClass
     public static void afterAll(){
-      /*  chromeDriver.quit();
-        firFoxDriver.quit();*/
+        chromeDriver.quit();
+        firFoxDriver.quit();
     }
 }
