@@ -93,6 +93,10 @@ public class Main {
         chromeDriver.findElement(By.cssSelector("button[name=login]")).click();
     }
 
+    //9
+
+    //10
+    //selenium grid
     @AfterClass
     public static void afterAll(){
         chromeDriver.quit();
