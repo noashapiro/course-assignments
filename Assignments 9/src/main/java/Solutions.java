@@ -1,6 +1,7 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -52,7 +53,27 @@ public class Solutions {
 
     //3
     @Test
-    public static void Assert_title(){}
+    public static void Assert_title(){
+        driver.get("https://www.facebook.com/");
+        driver.navigate().refresh();
+        String title="Facebook - Log In or Sign Up";
+        Assert.assertEquals(title, driver.getTitle());
+    }
+
+    //4
+    @Test
+    public static void Extensions(){
+        ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.addArguments("--disable-extensions");
+        driver = new ChromeDriver(chromeOptions);
+    }
+
+    //5
+    @Test
+    public static void Actions(){
+
+    }
+
     @AfterClass
     public static void AfterClass(){
         driver.quit();
