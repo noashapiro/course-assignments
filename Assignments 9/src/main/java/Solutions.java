@@ -167,6 +167,7 @@ public class Solutions {
         System.out.println(driver.findElement(By.id("two")).getRect().getHeight());
         System.out.println(driver.findElement(By.id("six")).getRect().getWidth());
     }
+
     //8
     @Test
     public void test01_theMarker() throws InterruptedException {
